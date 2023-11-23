@@ -1,14 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main (){
-int namNhuan;
+void tinhNamnhuan(){
+	int namNhuan;
 cout << "Nhap nam ban muon nhap: ";
 cin >> namNhuan;
  if (namNhuan%4==0){
- 	cout << "Nam " << namNhuan << " la nam nhuan" << endl;
+ 	cout << "True" << endl;
+ }  else if ( namNhuan%100==0 ){
+ 	cout << "False "<< endl;
  } else {
- 	cout << "Nam " << namNhuan << " khong phai la nam nhuan" << endl;
+ 	cout << "False "<< endl;
  }
+}
+
+
+int main (){
+    tinhNamnhuan();
 }
 
